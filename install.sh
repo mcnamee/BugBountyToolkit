@@ -311,6 +311,12 @@ echo -e "${RED}[*] • Downloading SecLists${NC}"
 cd ~/wordlists
 git clone --depth 1 https://github.com/danielmiessler/SecLists.git
 
+# Symlink wordlists
+echo -e "${RED}[*] • Symlink wordlists${NC}"
+ln -s /root/toolkit/theHarvester/wordlists ~/wordlists/theHarvester
+ln -s /usr/share/dirb/wordlists ~/wordlists/dirb
+ln -s /root/toolkit/knock/knockpy/wordlist ~/wordlists/knockpy
+
 # Cleanup
 echo -e "${RED}[*] • Tidying up${NC}"
 apt-get clean
