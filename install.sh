@@ -45,11 +45,12 @@ apt-get update && apt-get install -y --no-install-recommends \
     nmap  \
     perl  \
     python3 \
+    python3.7 \
     python-dnspython \
-    python3-pip \
     python-pycurl \
     python-pip  \
     python3-pip \
+    python3.7-dev \
     ruby-dev \
     tmux \
     wget \
@@ -70,8 +71,10 @@ cd /opt && \
 echo -e "${RED}[*] • Installing common Python dependencies${NC}"
 python -m pip install --upgrade setuptools
 python3 -m pip install --upgrade setuptools
+python3.7 -m pip install --upgrade setuptools
 python -m pip install --upgrade wheel html_similarity
 python3 -m pip install --upgrade wheel html_similarity
+python3.7 -m pip install --upgrade wheel html_similarity uvloop
 
 # tzdata
 echo -e "${RED}[*] • Setip tzdata${NC}"
@@ -253,9 +256,9 @@ apt-get install -y hydra
 # theHarvester
 echo -e "${RED}[*] • Installing theHarvester${NC}"
 cd ~/toolkit
-git clone --depth 1 https://github.com/laramies/theHarvester 
+git clone --depth 1 https://github.com/laramies/theHarvester
 cd theHarvester
-python3 -m pip install -r requirements.txt
+python3.7 -m pip install -r requirements/base.txt
 chmod +x theHarvester.py
 ln -sf ~/toolkit/theHarvester/theHarvester.py /usr/local/bin/theharvester
 

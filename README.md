@@ -77,7 +77,7 @@ chmod +x install.sh
 | [sublist3r](https://github.com/aboul3la/Sublist3r) | `sublist3r --help` |
 | [teh_s3_bucketeers](https://github.com/tomdev/teh_s3_bucketeers) | `bucketeer` |
 | [hydra](https://tools.kali.org/password-attacks/hydra) | `hydra -h` |
-| [theharvester](https://tools.kali.org/information-gathering/theharvester) | `theharvester --help` |
+| [theharvester](https://tools.kali.org/information-gathering/theharvester) | `python3.7 ~/toolkit/theHarvester/theHarvester.py --help` |
 | [tmux](https://github.com/tmux/tmux/wiki) | n/a |
 | [virtual-host-discovery](https://github.com/AlexisAhmed/virtual-host-discovery) | `virtual-host-discovery --help` |
 | [wafw00f](https://github.com/enablesecurity/wafw00f) | `wafw00f --help` |
